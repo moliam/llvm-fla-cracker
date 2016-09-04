@@ -1,5 +1,6 @@
 import os
 import copy
+import sys
 
 '''
 	format: 
@@ -730,11 +731,11 @@ def CodeSimulation(FileName):  #simulate the code, extract the original flow
 
 #------------------------*****************************************
 
-output =  CodeSimulation("testcode5.txt")
+output =  CodeSimulation(sys.argv[1])
 
 Logging("-----------------------*************************")
 
-outputfile = "code_output.txt"
+outputfile = sys.argv[2]
 fileout = open(outputfile, "w")
 
 for c in output:
