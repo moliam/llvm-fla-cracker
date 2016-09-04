@@ -1,0 +1,106 @@
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  signed int v3; // eax@24
+  signed int v4; // eax@28
+  bool v5; // zf@31
+  signed int v6; // eax@31
+  __int64 v7; // rax@38
+  signed int v9; // [sp+6Ch] [bp-24h]@1
+  char v10; // [sp+72h] [bp-1Eh]@1
+  char v11; // [sp+73h] [bp-1Dh]@28
+  int v12; // [sp+74h] [bp-1Ch]@31
+  int v13; // [sp+7Ch] [bp-14h]@1
+  int v14; // [sp+80h] [bp-10h]@1
+  int v15; // [sp+84h] [bp-Ch]@1
+  __int64 v16; // [sp+88h] [bp-8h]@1
+
+  v16 = *(_QWORD *)__stack_chk_guard_ptr;
+  v14 = 0;
+  v13 = 0;
+  scanf("%s", &v10, envp);
+  v15 = v10;
+  v9 = -1356555336;
+  do
+  {
+    while ( 1 )
+    {
+      while ( 1 )
+      {
+        while ( 1 )
+        {
+          while ( v9 <= -1383250769 )
+          {
+            if ( v9 == -1607633251 )
+            {
+              printf("fail 2");
+              v14 = 1;
+              v9 = 1388580787;
+            }
+          }
+          if ( v9 <= 2053611315 )
+            break;
+          if ( v9 == 2053611316 )
+          {
+            printf("succeed!");
+            v14 = 1;
+            v9 = 1388580787;
+          }
+        }
+        if ( v9 <= 1866034826 )
+          break;
+        if ( v9 == 1866034827 )
+        {
+          v5 = strcmp((const char *)&v12, "RIGHT") == 0;
+          v6 = 1021668429;
+          if ( v5 )
+            v6 = -179927636;
+          v9 = v6;
+        }
+      }
+      if ( v9 > 1388580786 )
+        break;
+      if ( v9 > 1021668428 )
+      {
+        if ( v9 == 1021668429 )
+        {
+          v9 = -179927636;
+          printf("pass 2");
+        }
+      }
+      else if ( v9 > -179927637 )
+      {
+        if ( v9 == -179927636 )
+          v9 = 2053611316;
+      }
+      else
+      {
+        switch ( v9 )
+        {
+          case -1383250768:
+            v9 = -1161188143;
+            printf("fail at 1");
+            break;
+          case -1356555336:
+            printf("hello")
+            v3 = -1383250768;
+
+            if ( v15 == 120 )
+              v3 = -1161188143;
+            v9 = v3;
+            break;
+          case -1161188143:
+            v4 = 1866034827;
+            if ( v11 != 100 )
+              v4 = -1607633251;
+            v9 = v4;
+            break;
+        }
+      }
+    }
+  }
+  while ( v9 != 1388580787 );
+  v7 = *(_QWORD *)__stack_chk_guard_ptr;
+  if ( *(_QWORD *)__stack_chk_guard_ptr == v16 )
+    LODWORD(v7) = v14;
+  return v7;
+}

@@ -1,0 +1,51 @@
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  signed int v3; // eax@9
+  signed int v5; // [sp+2Ch] [bp-24h]@1
+  signed int v6; // [sp+30h] [bp-20h]@1
+  char v7; // [sp+35h] [bp-1Bh]@1
+  char v8[10]; // [sp+36h] [bp-1Ah]@1
+  int v9; // [sp+40h] [bp-10h]@1
+  int v10; // [sp+44h] [bp-Ch]@1
+  __int64 v11; // [sp+48h] [bp-8h]@1
+
+  v11 = *(_QWORD *)__stack_chk_guard_ptr;
+  v10 = 0;
+  v9 = 0;
+  v7 = 0;
+  v6 = 0;
+  v5 = 1750278172;
+  scanf("%s", v8, envp);
+  do
+  {
+    while ( 1 )
+    {
+      while ( 1 )
+      {
+        while ( v5 <= -1249842835 )
+        {
+          if ( v5 == -1777239285 )
+          {
+            ++v6;
+            v5 = 1750278172;
+          }
+        }
+        if ( v5 != -1249842834 )
+          break;
+        v7 += v8[v6];
+        v5 = -1777239285;
+      }
+      if ( v5 != 1750278172 )
+        break;
+      v3 = -1249842834;
+      if ( v6 >= 10 )
+        v3 = 1798774915;
+      v5 = v3;
+    }
+  }
+  while ( v5 != 1798774915 );
+  printf("%c\n", (unsigned int)v7);
+  if ( *(_QWORD *)__stack_chk_guard_ptr != v11 )
+    JUMPOUT(__stack_chk_fail);
+  return 1;
+}

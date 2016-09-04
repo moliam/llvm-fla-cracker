@@ -1,0 +1,100 @@
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  signed int v3; // eax@24
+  signed int v4; // eax@28
+  signed int v5; // eax@33
+  signed int v7; // [sp+54h] [bp-2Ch]@1
+  signed int v8; // [sp+58h] [bp-28h]@1
+  int v9; // [sp+5Ch] [bp-24h]@1
+  char v10[10]; // [sp+6Ah] [bp-16h]@1
+  int v11; // [sp+74h] [bp-Ch]@1
+  __int64 v12; // [sp+78h] [bp-8h]@1
+
+  v12 = *(_QWORD *)__stack_chk_guard_ptr;
+  v11 = 0;
+  v9 = 0;
+  v8 = 1;
+  v7 = 2121906003;
+  scanf("%s", v10, envp);
+  do
+  {
+    while ( 1 )
+    {
+      while ( 1 )
+      {
+        while ( 1 )
+        {
+          while ( 1 )
+          {
+            while ( v7 > 2121906002 )
+            {
+              if ( v7 == 2121906003 )
+              {
+                v3 = 1481278115;
+                if ( v10[v9] == aAbcde[(signed __int64)v9] )
+                  v3 = 932135874;
+                v7 = v3;
+              }
+            }
+            if ( v7 <= 1799243694 )
+              break;
+            if ( v7 == 1799243695 )
+            {
+              v5 = -1087168299;
+              if ( !v8 )
+                v5 = 1282886374;
+              v7 = v5;
+            }
+          }
+          if ( v7 <= 1481278114 )
+            break;
+          if ( v7 == 1481278115 )
+          {
+            v8 = 0;
+            v7 = 1799243695;
+          }
+        }
+        if ( v7 <= 1282886373 )
+          break;
+        if ( v7 == 1282886374 )
+        {
+          v7 = 1101622353;
+          printf("different");
+        }
+      }
+      if ( v7 > 1101622352 )
+        break;
+      if ( v7 > 932135873 )
+      {
+        if ( v7 == 932135874 )
+        {
+          v4 = -373421366;
+          if ( aAbcde[(signed __int64)v9] )
+            v4 = -1118148654;
+          v7 = v4;
+        }
+      }
+      else
+      {
+        switch ( v7 )
+        {
+          case -1118148654:
+            ++v9;
+            v7 = 2121906003;
+            break;
+          case -1087168299:
+            v7 = 1101622353;
+            printf("same");
+            break;
+          case -373421366:
+            v7 = 1799243695;
+            break;
+        }
+      }
+    }
+  }
+  while ( v7 != 1101622353 );
+  if ( *(_QWORD *)__stack_chk_guard_ptr != v12 )
+    JUMPOUT(__stack_chk_fail);
+  return 1;
+}

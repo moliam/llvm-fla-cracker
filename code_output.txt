@@ -1,0 +1,314 @@
+__int64 __fastcall main(__int64 a1, char **a2, char **a3)
+signed __int64 v3; // rsi@1
+int v8; // edx@159
+int v10; // edx@163
+int v13; // edx@171
+int v15; // edx@175
+int v19; // edx@187
+int v21; // edx@191
+int v23; // edx@195
+int v25; // edx@199
+int v27; // edx@203
+int v29; // edx@207
+int v32; // edx@215
+int v34; // edx@219
+int v38; // edx@231
+int v41; // edx@239
+int v44; // [sp+1FCh] [bp-94h]@1
+char s[136]; // [sp+200h] [bp-90h]@1
+unsigned int v46; // [sp+288h] [bp-8h]@1
+int v47; // [sp+28Ch] [bp-4h]@1
+v46 = 0;
+fgets(s, 128, stdin);
+v3 = 0xFFFFFFFFLL;
+v44 = 1;
+v47 = s[0];
+if ( v47 != 73 )
+{
+	v3 = (signed __int64)*(&off_602CF0 + v44);
+	printf("%s", v3);
+	v46 = 78;
+	return v46;
+}
+else
+{
+	v3 = (unsigned int)v44++;
+	if ( s[(signed int)v3] != 99 )
+	{
+		v3 = (signed __int64)*(&off_602CF0 + v44);
+		printf("%s", v3);
+		v46 = 111;
+		return v46;
+	}
+	else
+	{
+		v3 = (unsigned int)v44;
+		v44 = -(-v44 - 1);
+		if ( s[(signed int)v3] != 101 )
+		{
+			v3 = (signed __int64)*(&off_602CF0 + v44);
+			printf("%s", v3);
+			v46 = 116;
+			return v46;
+		}
+		else
+		{
+			v8 = v44;
+			v3 = (unsigned int)(v44++ + 1);
+			if ( s[v8] != 67 )
+			{
+				v3 = (signed __int64)*(&off_602CF0 + v44);
+				printf("%s", v3);
+				v46 = 95;
+				return v46;
+			}
+			else
+			{
+				v10 = v44;
+				v3 = (unsigned int)(v44 - 1959366910 + 1959366911);
+				v44 = v44 - 1959366910 + 1959366911;
+				if ( s[v10] != 84 )
+				{
+					v3 = (signed __int64)*(&off_602CF0 + v44);
+					printf("%s", v3);
+					v46 = 116;
+					return v46;
+				}
+				else
+				{
+					v3 = (unsigned int)v44++;
+					if ( s[(signed int)v3] != 70 )
+					{
+						v3 = (signed __int64)*(&off_602CF0 + v44);
+						printf("%s", v3);
+						v46 = 104;
+						return v46;
+					}
+					else
+					{
+						v13 = v44;
+						v3 = (unsigned int)(v44++ + 1);
+						if ( s[v13] != 123 )
+						{
+							v3 = (signed __int64)*(&off_602CF0 + v44);
+							printf("%s", v3);
+							v46 = 101;
+							return v46;
+						}
+						else
+						{
+							v15 = v44;
+							v3 = (unsigned int)(v44++ + 1);
+							if ( s[v15] != 112 )
+							{
+								v3 = (signed __int64)*(&off_602CF0 + v44);
+								printf("%s", v3);
+								v46 = 95;
+								return v46;
+							}
+							else
+							{
+								v3 = (unsigned int)v44++;
+								if ( s[(signed int)v3] != 105 )
+								{
+									v3 = (signed __int64)*(&off_602CF0 + v44);
+									printf("%s", v3);
+									v46 = 102;
+									return v46;
+								}
+								else
+								{
+									v3 = (unsigned int)v44++;
+									if ( s[(signed int)v3] != 112 )
+									{
+										v3 = (signed __int64)*(&off_602CF0 + v44);
+										printf("%s", v3);
+										v46 = 108;
+										return v46;
+									}
+									else
+									{
+										v19 = v44;
+										v3 = (unsigned int)(v44++ + 1);
+										if ( s[v19] != 95 )
+										{
+											v3 = (signed __int64)*(&off_602CF0 + v44);
+											printf("%s", v3);
+											v46 = 97;
+											return v46;
+										}
+										else
+										{
+											v21 = v44;
+											v3 = (unsigned int)(v44 - 1920345590 + 1920345591);
+											v44 = v44 - 1920345590 + 1920345591;
+											if ( s[v21] != 105 )
+											{
+												v3 = (signed __int64)*(&off_602CF0 + v44);
+												printf("%s", v3);
+												v46 = 103;
+												return v46;
+											}
+											else
+											{
+												v23 = v44;
+												v3 = (unsigned int)(v44 - 1836227694 + 1836227695);
+												v44 = v44 - 1836227694 + 1836227695;
+												if ( s[v23] != 110 )
+												{
+													v3 = (signed __int64)*(&off_602CF0 + v44);
+													printf("%s", v3);
+													v46 = 95;
+													return v46;
+												}
+												else
+												{
+													v25 = v44;
+													v3 = (unsigned int)(v44++ + 1);
+													if ( s[v25] != 115 )
+													{
+														v3 = (signed __int64)*(&off_602CF0 + v44);
+														printf("%s", v3);
+														v46 = 115;
+														return v46;
+													}
+													else
+													{
+														v27 = v44;
+														v3 = (unsigned int)(v44 - 1875687347 + 1875687348);
+														v44 = v44 - 1875687347 + 1875687348;
+														if ( s[v27] != 116 )
+														{
+															v3 = (signed __int64)*(&off_602CF0 + v44);
+															printf("%s", v3);
+															v46 = 111;
+															return v46;
+														}
+														else
+														{
+															v29 = v44;
+															v3 = (unsigned int)(v44 - 37966238 + 37966239);
+															v44 = v44 - 37966238 + 37966239;
+															if ( s[v29] != 97 )
+															{
+																v3 = (signed __int64)*(&off_602CF0 + v44);
+																printf("%s", v3);
+																v46 = 119;
+																return v46;
+															}
+															else
+															{
+																v3 = (unsigned int)v44;
+																v44 = -(-v44 - 1);
+																if ( s[(signed int)v3] != 108 )
+																{
+																	v3 = (signed __int64)*(&off_602CF0 + v44);
+																	printf("%s", v3);
+																	v46 = 119;
+																	return v46;
+																}
+																else
+																{
+																	v32 = v44;
+																	v3 = (unsigned int)(v44++ + 1);
+																	if ( s[v32] != 108 )
+																	{
+																		v3 = (signed __int64)*(&off_602CF0 + v44);
+																		printf("%s", v3);
+																		v46 = 119;
+																		return v46;
+																	}
+																	else
+																	{
+																		v34 = v44;
+																		v3 = (unsigned int)(v44++ + 1);
+																		if ( s[v34] != 95 )
+																		{
+																			v3 = (signed __int64)*(&off_602CF0 + v44);
+																			printf("%s", v3);
+																			v46 = 119;
+																			return v46;
+																		}
+																		else
+																		{
+																			v3 = (unsigned int)v44++;
+																			if ( s[(signed int)v3] != 97 )
+																			{
+																				v3 = (signed __int64)*(&off_602CF0 + v44);
+																				printf("%s", v3);
+																				v46 = 119;
+																				return v46;
+																			}
+																			else
+																			{
+																				v3 = (unsigned int)v44;
+																				v44 = -(-v44 - 1);
+																				if ( s[(signed int)v3] != 110 )
+																				{
+																					v3 = (signed __int64)*(&off_602CF0 + v44);
+																					printf("%s", v3);
+																					v46 = 119;
+																					return v46;
+																				}
+																				else
+																				{
+																					v38 = v44;
+																					v3 = (unsigned int)(v44 - 586298664 + 586298665);
+																					v44 = v44 - 586298664 + 586298665;
+																					if ( s[v38] != 103 )
+																					{
+																						v3 = (signed __int64)*(&off_602CF0 + v44);
+																						printf("%s", v3);
+																						v46 = 119;
+																						return v46;
+																					}
+																					else
+																					{
+																						v3 = (unsigned int)v44++;
+																						if ( s[(signed int)v3] != 114 )
+																						{
+																							v3 = (signed __int64)*(&off_602CF0 + v44);
+																							printf("%s", v3);
+																							v46 = 121;
+																							return v46;
+																						}
+																						else
+																						{
+																							v41 = v44;
+																							v3 = (unsigned int)(v44++ + 1);
+																							if ( s[v41] != 125 )
+																							{
+																								v3 = (signed __int64)*(&off_602CF0 + v44);
+																								printf("%s", v3);
+																								v46 = 33;
+																								return v46;
+																							}
+																							else
+																							{
+																								printf("Wooooohoooo!\n", v3, 1734437990LL);
+																								v46 = 0;
+																								return v46;
+																							}
+																						}
+																					}
+																				}
+																			}
+																		}
+																	}
+																}
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

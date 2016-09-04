@@ -1,0 +1,100 @@
+int __cdecl main(int argc, const char **argv, const char **envp)
+{
+  signed int v3; // eax@27
+  signed int v4; // ecx@32
+  signed int v5; // eax@35
+  signed int v7; // [sp+6Ch] [bp-24h]@1
+  char v8; // [sp+72h] [bp-1Eh]@1
+  char v9; // [sp+73h] [bp-1Dh]@32
+  int v10; // [sp+7Ch] [bp-14h]@1
+  int v11; // [sp+80h] [bp-10h]@1
+  int v12; // [sp+84h] [bp-Ch]@1
+  __int64 v13; // [sp+88h] [bp-8h]@1
+
+  v13 = *(_QWORD *)__stack_chk_guard_ptr;
+  v11 = 0;
+  v10 = 0;
+  scanf("%s", &v8, envp);
+  v12 = v8;
+  v7 = 541363751;
+  do
+  {
+    while ( v7 <= 1670821026 )
+    {
+      if ( v7 > -1389122065 )
+      {
+        if ( v7 > -1118978952 )
+        {
+          if ( v7 > -960398201 )
+          {
+            if ( v7 > -874827660 )
+            {
+              if ( v7 > 319377743 )
+              {
+                if ( v7 > 541363750 )
+                {
+                  switch ( v7 )
+                  {
+                    case 541363751:
+                      v3 = 869007499;
+                      if ( v12 == 120 )
+                        v3 = 811542728;
+                      v7 = v3;
+                      break;
+                    case 811542728:
+                      v7 = 319377744;
+                      printf("branch2");
+                      break;
+                    case 869007499:
+                      v7 = 319377744;
+                      printf("branch1");
+                      break;
+                  }
+                }
+                else if ( v7 == 319377744 )
+                {
+                  printf("common branch 1");
+                  v4 = -1118978951;
+                  if ( v9 == 120 )
+                    v4 = -874827659;
+                  v7 = v4;
+                }
+              }
+              else if ( v7 == -874827659 )
+              {
+                v7 = 1670821027;
+                printf("branch4");
+              }
+            }
+            else if ( v7 == -960398200 )
+            {
+              v7 = -1389122064;
+              printf("branch31");
+            }
+          }
+          else if ( v7 == -1118978951 )
+          {
+            v5 = -960398200;
+            if ( v8 != 120 )
+              v5 = -1763383388;
+            v7 = v5;
+          }
+        }
+        else if ( v7 == -1389122064 )
+        {
+          v7 = 1670821027;
+        }
+      }
+      else if ( v7 == -1763383388 )
+      {
+        v7 = -1389122064;
+        printf("branch32");
+      }
+    }
+  }
+  while ( v7 != 1670821027 );
+  printf("common branch 2");
+  if ( *(_QWORD *)__stack_chk_guard_ptr != v13 )
+    JUMPOUT(__stack_chk_fail);
+  return 1;
+}
