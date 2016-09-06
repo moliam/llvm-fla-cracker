@@ -435,12 +435,12 @@ def CplxSimulation(LineBuf, ProgInitStat):
 #		Logging("trace before: " + str(Trace[-1]))
 		Logging("ctrl stack:" + str(CtrlStack))
 #-----------------------------------------------check loop
-		if Stat in Trace:  # loop found
+		if Stat in Trace:  # a loop found
 			Logging("loop found, stat:" + str(Stat))
 			TmpTraceProp = copy.deepcopy(TraceProp)
 			fromLineIdx = 0
 			toLineIdx = 0
-			while 1:   				  # fromidx
+			while 1:   				  # the idx loop goes from
 				if TmpTraceProp != []:
 					label = TmpTraceProp.pop()
 				else:
@@ -451,7 +451,7 @@ def CplxSimulation(LineBuf, ProgInitStat):
 					break
 					
 			loopidx = Trace.index(Stat)
-			for i in range(loopidx, len(TraceProp)):  # toidx
+			for i in range(loopidx, len(TraceProp)):  # the idx loop goes to
 				if TraceProp[i] == TP_SIMOUT:
 					toLineIdx = Trace[i][LINE_IDX]
 					break
@@ -459,7 +459,8 @@ def CplxSimulation(LineBuf, ProgInitStat):
 			LoopId = "Loop_" + str(GlobalBranchId)
 			GlobalLoopId += 1
 
-			for i in range(len(SimOut)):
+			for j in range(len(SimOut), 0, -1):
+				i = j - 1
 				if SimOut[i][LINE_IDX] == toLineIdx and SimOut[i][2] == VarVal[CTRL_VAL]:
 					SimOut.insert(i, [LoopId + ":", -1, VarVal[CTRL_VAL]])
 					Logging("insert: %s" % str(SimOut[i]))
